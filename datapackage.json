@@ -2,7 +2,7 @@
   "profile": "tabular-data-package",
   "resources": [
     {
-      "name": "resource1",
+      "name": "Henry_Hub_Gas_Prices_Daily",
       "path": "Henry_Hub_Gas_Prices_Daily.csv",
       "profile": "tabular-data-resource",
       "schema": {
@@ -21,7 +21,7 @@
       }
     },
     {
-      "name": "resource2",
+      "name": "Henry_Hub_Gas_Prices_Monthly",
       "path": "Henry_Hub_Gas_Prices_Monthly.csv",
       "profile": "tabular-data-resource",
       "schema": {
