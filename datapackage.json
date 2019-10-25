@@ -1,0 +1,52 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "resource1",
+      "path": "Henry_Hub_Gas_Prices_Daily.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    },
+    {
+      "name": "resource2",
+      "path": "Henry_Hub_Gas_Prices_Monthly.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "Date",
+            "type": "integer",
+            "format": "default"
+          },
+          {
+            "name": "Price",
+            "type": "integer",
+            "format": "default"
+          }
+        ]
+      }
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Ismail Shahzad",
+      "role": "author"
+    }
+  ],
+  "name": "datapackage.json",
+  "title": "My Data Package",
+  "description": "Date and Price of Gas Company"
+}
