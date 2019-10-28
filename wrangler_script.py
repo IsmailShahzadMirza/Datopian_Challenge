@@ -29,3 +29,9 @@ data['Date'] = pd.to_datetime(data['Date'])
 data2 = data.groupby(data['Date'].dt.strftime('%Y/%m/01'))['Price'].mean()
 #Write the data to a csv file
 data2.reset_index().to_csv('Henry_Hub_Gas_Prices_Monthly.csv', header=True, index=False)
+
+
+#Now for year Group data for the same year only
+data_year = data.groupby(data['Date'].dt.strftime('%Y/01/01')).Price.mean()
+#Writing it to csv file​
+data_year.reset_index().to_csv('Henry_Hub_Gas_Prices_Yearly.csv', header=True, index=False)
